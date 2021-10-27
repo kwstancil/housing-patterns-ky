@@ -3,7 +3,7 @@
 
 <head>
   <meta charset=utf-8 />
-  <title>Choropleth Map With Leaflet</title>
+  <title>Kentucky Housing Patterns</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -124,7 +124,7 @@
   <div id='map'></div>
   <!-- Create empty legend that Leaflet will own. -->
   <div id="empty-legend" class='legend'></div>
-  
+
 
   <footer>
 
@@ -397,7 +397,7 @@
       var legend = L.control( {position: 'topleft'}); // create Leaflet control object and position it in top left
 
       legend.onAdd = function() {
-        
+
         var legendDiv = L.DomUtil.get('empty-legend'); // use get function instead of create
 
         legendDiv.innerHTML = "<h3>Percent " + popuptext + "<h3>"; // add legend info
